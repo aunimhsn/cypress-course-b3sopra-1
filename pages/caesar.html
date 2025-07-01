@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar</title>
+</head>
+<body>
+    <h3>Caesar Cypher</h3>
+
+    <form action="#">
+        <div>
+            <label>Cipher Key</label>
+            <input type="number" min="1" max="25" name="cipher-key" id="cipher-key">
+        </div>
+        <div>
+            <label>Cipher Message</label>
+            <textarea name="cipher-message" id="cipher-message" placeholder="Your message..."></textarea>
+        </div>
+        <button type="button">Cipher</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
