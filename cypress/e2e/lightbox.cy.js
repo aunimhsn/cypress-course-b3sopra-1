@@ -5,7 +5,6 @@ describe('test: lightbox.html', () => {
         cy.visit('../../pages/lightbox.html')
     })
 
-    
     // 1
     it('should open lightbox, click on image', () => {
         cy.dataCy('lightbox-overlay').click();
