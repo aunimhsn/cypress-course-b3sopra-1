@@ -6,10 +6,9 @@ context('Caesar', () => {
     })
 
     it('should have a result of Khoor! for Hello! with the key: 3', () => {
-        cy.get('input[type=number]').type('3')
-        cy.get('textarea').type('Hello!')
-        cy.get('button[type=button]').click()
-
-        cy.get('p#result').should('have.text', 'Khoor!')
+        cy.dataCy('cipher-key').type('3')
+        cy.dataCy('cipher-message').type('Hello!')
+        cy.dataCy('cipher-btn').click()
+        cy.dataCy('result').should('have.text', 'Khoor!')
     })
 })
